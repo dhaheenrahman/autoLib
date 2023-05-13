@@ -56,7 +56,7 @@
         android:contentDescription="accountButton"
         app:flow_horizontalBias="0"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
@@ -68,7 +68,6 @@
         android:layout_width="360dp"
         android:layout_height="107dp"
         android:layout_marginTop="20dp"
-        android:clickable="true"
         android:background="@drawable/homebuttonone"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,7 +132,6 @@
         android:layout_width="360dp"
         android:layout_height="107dp"
         android:layout_marginTop="28dp"
-        android:clickable="true"
         android:background="@drawable/homebuttontwo"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -194,10 +192,10 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="360dp"
         android:layout_height="107dp"
         android:layout_marginTop="28dp"
-        android:clickable="true"
         android:background="@drawable/homebuttonthree"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
