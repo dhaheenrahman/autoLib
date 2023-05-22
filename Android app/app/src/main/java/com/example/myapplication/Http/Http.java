@@ -28,7 +28,7 @@ public class Http{
         con.setRequestMethod("GET");
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String inputLine;
-        StringBuffer response = new StringBuffer();
+        StringBuilder response = new StringBuilder();
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine);
         }
