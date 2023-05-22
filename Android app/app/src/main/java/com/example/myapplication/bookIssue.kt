@@ -14,6 +14,8 @@ class BookIssue : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bookissue)
+        val bookNoField : TextInputEditText? = findViewById<TextInputEditText>(R.id.bookNoField)
+        bookNoField?.setText(intent.getStringExtra("barcodevalue"))
 
     }
 }

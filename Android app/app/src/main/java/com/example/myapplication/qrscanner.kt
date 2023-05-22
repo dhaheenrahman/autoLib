@@ -29,9 +29,9 @@ class QrScanner : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.qrscanner)
         barcodeView = findViewById(R.id.barcodeView)
-        barcodeView.decodeContinuous(callback)
+        barcodeView.decodeSingle(callback)
         barcodeView.setStatusText("Place the QR pasted on the book in the rectangle")
-        val intent = Intent(this ,BookIssue::class.java)
+
     }
 
 
@@ -80,9 +80,9 @@ class QrScanner : AppCompatActivity() {
             if (barcode != null) {
                 Log.d(TAG, "QR code scanned: " + barcode.text)
                 barcodeView.pause()
-                val bookNo = barcode.text
-                val bookNoField : TextInputEditText? = findViewById<TextInputEditText>(R.id.bookNoField)
-                bookNoField?.setText(bookNo)
+
+                val intent = Intent(this@QrScanner ,BookIssue::class.java)
+                intent.putExtra("barcodevalue",barcode.text)
                 startActivity(intent)
             }
         }
