@@ -88,6 +88,7 @@
         app:layout_constraintVertical_bias="0.302">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bookNameField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Book Name"
@@ -110,6 +111,7 @@
         app:layout_constraintVertical_bias="0.446">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/issueDateField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Date of issue"
@@ -127,33 +129,18 @@
         app:hintTextColor="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74">
+        app:layout_constraintVertical_bias="0.601">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/retDateField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Date of return"
             android:textColor="@color/teal_200"
             android:textColorHint="@color/teal_200" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="period"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout8"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
-        tools:layout_editor_absoluteX="16dp">
-
-        <AutoCompleteTextView
-            android:id="@+id/auto_complete_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -168,7 +155,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.902" />
+        app:layout_constraintVertical_bias="0.829" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

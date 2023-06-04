@@ -1,7 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
+
+
 
 android {
     namespace 'com.example.myapplication'
@@ -37,6 +40,7 @@ android {
 }
 
 
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.10.0'
@@ -47,11 +51,18 @@ dependencies {
 
     implementation 'com.google.zxing:core:3.4.0'
     implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
-
+    implementation("io.appwrite:sdk-for-android:1.1.0")
 
     // Coroutines to make the HTTP requests asynchronous(In the background thread)
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
     // Gson to convert raw JSON to pretty JSON
     implementation 'com.google.code.gson:gson:2.8.9'
+
+    implementation 'org.threeten:threetenbp:1.4.0'
+
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.2'
+
+
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.6'
 
 }

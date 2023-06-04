@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/studenthome.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/studenthome.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/setnewpassword.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/setnewpassword.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/bookissue.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/bookissue.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/qrscanner.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/qrscanner.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/librarianhome.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/librarianhome.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/duedb.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/duedb.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/login.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/login.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/bookdb.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/bookdb.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/studentdb.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/studentdb.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/approval.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/approval.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/bookread.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/bookread.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/bookreturn.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/bookreturn.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-mergeDebugResources-30:/layout/get_started.xml",
+        "source": "com.example.myapplication.app-main-33:/layout/get_started.xml"
+    }
+]

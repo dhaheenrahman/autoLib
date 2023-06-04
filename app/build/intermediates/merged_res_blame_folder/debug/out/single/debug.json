@@ -1,0 +1,266 @@
+[
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttonfour.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttonfour.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_setnewpassword.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/setnewpassword.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttonthree.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttonthree.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_studenthome.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/studenthome.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_back_button.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/back_button.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_bookreturn.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/bookreturn.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_get_started.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/get_started.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttononetext.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttononetext.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttonfive.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttonfive.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_tick.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/tick.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_bookread.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/bookread.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_but3.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/but3.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_student.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/student.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_is_greater_than.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/is_greater_than.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_librarianhome.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/librarianhome.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_studentdb.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/studentdb.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_but1.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/but1.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_logout.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/logout.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttonthreetext.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttonthreetext.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/font_anek.ttf.flat",
+        "source": "com.example.myapplication.app-main-33:/font/anek.ttf"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_login.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/login.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_home_cover.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/home_cover.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/xml_backup_rules.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_bookissue.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/bookissue.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttonsix.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttonsix.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttonone.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttonone.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_qrscanner.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/qrscanner.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttonsixtext.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttonsixtext.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/font_baloo_da.ttf.flat",
+        "source": "com.example.myapplication.app-main-33:/font/baloo_da.ttf"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_duedb.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/duedb.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_but2.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/but2.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_launcher_icon.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/launcher_icon.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/font_bungeeinline.ttf.flat",
+        "source": "com.example.myapplication.app-main-33:/font/bungeeinline.ttf"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttonfourtext.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttonfourtext.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/font_abeezee.ttf.flat",
+        "source": "com.example.myapplication.app-main-33:/font/abeezee.ttf"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttontwo.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttontwo.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_shape_cover.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/shape_cover.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_due.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/due.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_mail.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/mail.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_librarian.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/librarian.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_bookdb.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/bookdb.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttonfivetext.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttonfivetext.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_lock.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/lock.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_book_cover.jpg.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/book_cover.jpg"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_homebuttontwotext.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/homebuttontwotext.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/layout_approval.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/layout/approval.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_bookdb.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/bookdb.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_shape.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/shape.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_account.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/account.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/drawable_studentdb.png.flat",
+        "source": "com.example.myapplication.app-main-33:/drawable/studentdb.png"
+    },
+    {
+        "merged": "com.example.myapplication.app-merged_res-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.myapplication.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    }
+]

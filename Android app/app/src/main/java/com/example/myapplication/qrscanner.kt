@@ -19,7 +19,11 @@ import com.journeyapps.barcodescanner.BarcodeResult
 import com.journeyapps.barcodescanner.CompoundBarcodeView
 import com.google.zxing.integration.android.IntentIntegrator
 import com.google.zxing.integration.android.IntentResult
+import java.text.SimpleDateFormat
+import java.util.*
 
+import org.threeten.bp.LocalDate
+import org.threeten.bp.temporal.ChronoUnit
 
 class QrScanner : AppCompatActivity() {
 
@@ -82,7 +86,8 @@ class QrScanner : AppCompatActivity() {
                 barcodeView.pause()
 
                 val intent = Intent(this@QrScanner ,BookIssue::class.java)
-                intent.putExtra("barcodevalue",barcode.text)
+                val str = barcode.text
+                intent.putExtra("barcodevalue", str)
                 startActivity(intent)
             }
         }
