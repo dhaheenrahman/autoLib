@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.*
@@ -12,8 +13,17 @@ class Home : AppCompatActivity() {
 
         val logoutButton = findViewById<ImageButton>(R.id.imageButton8)
         logoutButton.setOnClickListener {
+            // Clear the login status in SharedPreferences
+            val sharedPreferences = getSharedPreferences("login_prefs", Context.MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.putBoolean("isLoggedIn", false)
+            editor.apply()
+
+            // Navigate to the Login activity
             val intent = Intent(this, Login::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
+            finish()
         }
 
         val bookIssueButton: LinearLayout = findViewById(R.id.linearLayout3)
