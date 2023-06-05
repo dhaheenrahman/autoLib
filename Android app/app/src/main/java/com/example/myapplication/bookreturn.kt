@@ -22,6 +22,7 @@ class BookReturn : AppCompatActivity() {
 
         database = FirebaseDatabase.getInstance().getReference("BookIssueTable")
 
+
         val bookNoField : TextInputEditText? = findViewById<TextInputEditText>(R.id.bookNoField)
         val bookNameField : TextInputEditText? = findViewById<TextInputEditText>(R.id.bookNameField)
         val issueDateField : TextInputEditText? = findViewById<TextInputEditText>(R.id.issueDateField)
@@ -30,7 +31,7 @@ class BookReturn : AppCompatActivity() {
         val str:String?=intent.getStringExtra("barcodevalue")
         var ab = str!!.split(",")
         val datee = org.threeten.bp.LocalDate.now()
-        val ret = datee.plusDays(30)
+        val ret = org.threeten.bp.LocalDate.now()
         val datestr = datee.toString()
         val retstr = ret.toString()
         ab += datestr
@@ -47,12 +48,17 @@ class BookReturn : AppCompatActivity() {
 
         val submitButton=findViewById<Button>(R.id.button2)
         submitButton.setOnClickListener{
+
+            val newChildRef = database.push() // Generate a new unique key
+            var uniqueId = 1 // Get the generated unique ID
+
             val bookNo = ab[0]
             val bookName = ab[1]
             val issueDate = ab[2]
             val retDate = ab[3]
-            val data = BookIssueForm(bookNo,bookName,issueDate,retDate)
-            database.child(bookNo).setValue(data)
+            val data = BookIssueForm(uniqueId,bookNo,bookName,issueDate,retDate)
+            database.child(uniqueId.toString()).setValue(data)
+            uniqueId++
 
             val intent = Intent(this@BookReturn,Approval::class.java)
             startActivity(intent)

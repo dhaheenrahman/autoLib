@@ -44,16 +44,20 @@ class BookRead : AppCompatActivity() {
         bookNameField?.isEnabled = false
         issueDateField?.isEnabled = false
         retDateField?.isEnabled = false
+        var uniqueId = 1// Get the generated unique ID
+
 
         val submitButton=findViewById<Button>(R.id.button2)
         submitButton.setOnClickListener{
+
+//            val newChildRef = database.push() // Generate a new unique key
+            uniqueId += 1
             val bookNo = ab[0]
             val bookName = ab[1]
             val issueDate = ab[2]
             val retDate = ab[3]
-            val data = BookIssueForm(bookNo,bookName,issueDate,retDate)
-            database.child(bookNo).setValue(data)
-
+            val data = BookIssueForm(uniqueId,bookNo,bookName,issueDate,retDate)
+            database.child(uniqueId.toString()).setValue(data)
             val intent = Intent(this@BookRead,Approval::class.java)
             startActivity(intent)
 

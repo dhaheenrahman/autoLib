@@ -1,10 +1,12 @@
 package com.example.myapplication
 
 //import QRCodeScannerActivity
+import android.content.Context
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Handler
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.database.DatabaseReference
@@ -15,12 +17,14 @@ import java.util.Date
 class BookIssue : AppCompatActivity() {
     private lateinit var database:DatabaseReference
     private lateinit var handler: Handler
+    private lateinit var sharedPrefs: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bookissue)
 
         database = FirebaseDatabase.getInstance().getReference("BookIssueTable")
+        sharedPrefs = getSharedPreferences("BookIssuePrefs", Context.MODE_PRIVATE)
 
         val bookNoField : TextInputEditText? = findViewById<TextInputEditText>(R.id.bookNoField)
         val bookNameField : TextInputEditText? = findViewById<TextInputEditText>(R.id.bookNameField)
@@ -45,14 +49,24 @@ class BookIssue : AppCompatActivity() {
         issueDateField?.isEnabled = false
         retDateField?.isEnabled = false
 
+        var uniqueId = sharedPrefs.getInt("lastUniqueId",0) // Get the generated unique ID
+
         val submitButton=findViewById<Button>(R.id.button2)
         submitButton.setOnClickListener{
+            uniqueId+=1
+
+//            val newChildRef = database.push() // Generate a new unique key
+
             val bookNo = ab[0]
             val bookName = ab[1]
             val issueDate = ab[2]
             val retDate = ab[3]
-            val data = BookIssueForm(bookNo,bookName,issueDate,retDate)
-            database.child(bookNo).setValue(data)
+            val data = BookIssueForm(uniqueId,bookNo,bookName,issueDate,retDate)
+            database.child(uniqueId.toString()).setValue(data)
+
+            val editor = sharedPrefs.edit()
+            editor.putInt("lastUniqueId", uniqueId)
+            editor.apply()
 
             val intent = Intent(this@BookIssue,Approval::class.java)
             startActivity(intent)
