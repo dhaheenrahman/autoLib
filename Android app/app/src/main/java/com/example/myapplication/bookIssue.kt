@@ -5,15 +5,16 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
+import android.os.Handler
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import java.time.LocalDate
 import java.util.Date
 
-//..
 class BookIssue : AppCompatActivity() {
     private lateinit var database:DatabaseReference
+    private lateinit var handler: Handler
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +53,24 @@ class BookIssue : AppCompatActivity() {
             val retDate = ab[3]
             val data = BookIssueForm(bookNo,bookName,issueDate,retDate)
             database.child(bookNo).setValue(data)
+
+            val intent = Intent(this@BookIssue,Approval::class.java)
+            startActivity(intent)
+
+            val visibilityDuration = 2000L
+            handler = Handler()
+            handler.postDelayed({
+
+                val returnIntent = Intent(this@BookIssue, Home::class.java)
+                startActivity(returnIntent)
+                finish()
+            },visibilityDuration)
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        // Cancel the handler to prevent memory leaks
+        handler.removeCallbacksAndMessages(null)
     }
 }
