@@ -5,27 +5,16 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
-import com.example.myapplication.R
-import com.google.android.material.textfield.TextInputEditText
 import com.google.zxing.Result
 import com.google.zxing.ResultPoint
 import com.journeyapps.barcodescanner.BarcodeCallback
 import com.journeyapps.barcodescanner.BarcodeResult
 import com.journeyapps.barcodescanner.CompoundBarcodeView
-import com.google.zxing.integration.android.IntentIntegrator
-import com.google.zxing.integration.android.IntentResult
-import java.text.SimpleDateFormat
-import java.util.*
 
-import org.threeten.bp.LocalDate
-import org.threeten.bp.temporal.ChronoUnit
-
-class QrScanner : AppCompatActivity() {
+class ReadQrScanner : AppCompatActivity() {
 
     private lateinit var barcodeView: CompoundBarcodeView
 
@@ -85,7 +74,7 @@ class QrScanner : AppCompatActivity() {
                 Log.d(TAG, "QR code scanned: " + barcode.text)
                 barcodeView.pause()
 
-                val intent = Intent(this@QrScanner ,BookIssue::class.java)
+                val intent = Intent(this@ReadQrScanner ,BookRead::class.java)
                 val str = barcode.text
                 intent.putExtra("barcodevalue", str)
                 startActivity(intent)

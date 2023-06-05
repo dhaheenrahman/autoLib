@@ -28,17 +28,17 @@ class Home : AppCompatActivity() {
 
         val bookIssueButton: LinearLayout = findViewById(R.id.linearLayout3)
         bookIssueButton.setOnClickListener {
-            val intent = Intent(this, QrScanner::class.java)
+            val intent = Intent(this, IssueQrScanner::class.java)
             startActivity(intent)
         }
         val bookReturnButton: LinearLayout = findViewById(R.id.linearLayout4)
         bookReturnButton.setOnClickListener {
-            val intent = Intent(this, QrScanner::class.java)
+            val intent = Intent(this, ReturnQrScanner::class.java)
             startActivity(intent)
         }
         val bookReadButton: LinearLayout = findViewById(R.id.linearLayout5)
         bookReadButton.setOnClickListener {
-            val intent = Intent(this, QrScanner::class.java)
+            val intent = Intent(this, ReadQrScanner::class.java)
             startActivity(intent)
         }
     }
