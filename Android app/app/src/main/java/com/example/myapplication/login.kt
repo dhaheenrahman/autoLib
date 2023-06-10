@@ -59,8 +59,8 @@ class Login : AppCompatActivity() {
                                     // Save login status in SharedPreferences
                                     val editor = sharedPreferences.edit()
                                     editor.putBoolean("isLoggedIn", true)
+                                    editor.putString("admno", usernameText)
                                     editor.apply()
-
                                     break
                                 }
                             }

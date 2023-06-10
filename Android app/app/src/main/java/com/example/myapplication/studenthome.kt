@@ -41,5 +41,11 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, ReadQrScanner::class.java)
             startActivity(intent)
         }
+        val bookDatabase: LinearLayout = findViewById(R.id.linearLayout1)
+        bookDatabase.setOnClickListener {
+            val intent = Intent(this, BookDatabase::class.java)
+            startActivity(intent)
+        }
+
     }
 }

@@ -33,6 +33,7 @@
         <activity android:name=".Approval"/>
         <activity android:name=".LibrarianHome"/>
         <activity android:name=".BookRead"/>
+        <activity android:name=".BookDatabase"/>
     </application>
 
 </manifest>

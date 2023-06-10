@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -20,7 +19,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Book ID" />
+            android:hint="Book No" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,7 +81,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Issue Date"
+            android:hint="Book Name"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="287dp" />
 
@@ -102,7 +101,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Return Date"
+            android:hint="Author"
             tools:layout_editor_absoluteX="34dp"
             tools:layout_editor_absoluteY="358dp" />
 
@@ -114,9 +113,57 @@
         android:layout_height="55dp"
         android:layout_marginTop="28dp"
         android:backgroundTint="#3587B6"
-        android:textSize="16sp"
         android:text="Submit"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button2">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="337dp"
+            android:layout_height="212dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:stretchColumns="*"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button2"
+            app:layout_constraintVertical_bias="0.032">
+
+            <TableRow android:layout_width="370dp">
+
+                <TextView
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:text="Book No"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:text="Book Name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:text="Author"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
